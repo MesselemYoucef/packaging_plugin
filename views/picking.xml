@@ -2,11 +2,11 @@
 <odoo>
     <record id="view_picking_form_inherited" model="ir.ui.view">
         <field name="name">view.picking.tree.inherited</field>
-        <field name="model">stock.move.line</field>
-        <field name="inherit_id" ref="stock.line.tree"/>
+        <field name="model">stock.move</field>
+        <field name="inherit_id" ref="stock.view_move_tree"/>
         <field name="priority">1001</field>
         <field name="arch" type="xml">
-                        <field name="picking_type_id" position="after">
+                        <field name="product_id" position="after">
                             <field name="pcs_per_cartoon"/>
                         </field>
             <!--            <xpath expr="//field[@name='move_ids_without_package']/tree/field[@name='quantity_done']" position="after">-->

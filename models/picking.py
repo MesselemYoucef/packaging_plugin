@@ -2,7 +2,7 @@ from odoo import models, fields, api
 
 
 class StockPicking(models.Model):
-    _inherit = 'stock.move.line'
+    _inherit = 'stock.move'
     # _inherit = ['stock.move', 'stock.move.line']
 
     # product_id = fields.Many2one("product.template")
